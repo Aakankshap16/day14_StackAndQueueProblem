@@ -31,8 +31,22 @@
             }
             while (temp != null)
             {
-                Console.Write(temp.data + " ");
+                Console.WriteLine(temp.data + " ");
                 temp = temp.next;
+            }
+        }
+
+        public void Dequeue()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Queue is empty,Dequeue is not possible.");
+                return;
+            }
+            while (head != null)
+            {
+                Console.WriteLine($"Value dequeue is {head.data}");
+                head = head.next;
             }
         }
     }
