@@ -8,16 +8,12 @@ namespace day14_StackAndQueuesProgram
             Console.WriteLine("Welcome to Stack And Queue Program!");
             Console.WriteLine("#####################");
 
-            StackWithLinkedList obj = new StackWithLinkedList();
-            obj.push(70);
-            obj.push(30);
-            obj.push(56);
+            QueueWithLinkedList obj = new QueueWithLinkedList();
+            obj.Enqueue(56);
+            obj.Enqueue(30);
+            obj.Enqueue(70);
             obj.Display();
-            //obj.Peek();
-            Console.WriteLine("After pop operation:");
-            //obj.Pop();
-            obj.IsEmpty();
-            obj.Display();
+           
         }
 
     }
